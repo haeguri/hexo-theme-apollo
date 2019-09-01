@@ -58,9 +58,18 @@
         word-break: break-all;
     }
     blockquote {
+        color: $oc-gray-6;
         margin: 2em 0;
         padding-left: 20px;
         border-left: 4px solid #42b983;
+
+        code {
+          color: $oc-gray-6;
+        }
+
+        a {
+          color: $oc-green-5;
+        }
     }
     img {
         display: block;

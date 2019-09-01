@@ -1,5 +1,5 @@
 ::selection {
-    color: #FFFFFF;
+    color: $oc-white;
     background-color: #42b983;
 }
 
@@ -13,7 +13,7 @@ body {
     color: #34495e;
     font-size: 16px;
     line-height: 1.6;
-    background-color: #fff;
+    background-color: $oc-white;
     font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
@@ -45,8 +45,9 @@ hr {
 
 code {
     margin: 0 2px;
-    padding: 1px 5px;
-    color: #e96900;
+    padding: 0.5px 2px;
+    color: $oc-gray-7;
+    border: solid 1px $oc-gray-1;
     border-radius: 2px;
     white-space: inherit;
 }
@@ -54,6 +55,10 @@ code {
 pre code {
   padding-left: 0;
   padding-right: 0;
+
+  .token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string {
+    background: hsla(0, 0%, 100%, 0);
+  }
 }
 
 iframe, video {
